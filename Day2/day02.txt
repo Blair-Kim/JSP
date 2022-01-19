@@ -1,0 +1,92 @@
+JSP의 내장 객체
+
+request 객체
+- 웹 브라우저의 요청 정보를 저장하고 있는 객체
+
+메소드
+getHeader() : 요청 정보의 헤더정보를 반환
+getMethod() : 요청 정보의 HTTP Method를 반환
+getParameter() : 요청 정보의 일므으로 요청 값을 반환
+getCharacterEncoding() : 요청 정보의 인코딩을 설정
+getParameterValues() : 요청 정보의 이름으로 요청 값을 배열로 반환
+
+response 객체
+- 웹 브라우저의 요청에 대한 응답 정보를 저장하고 있는 객체
+
+🎁 쿠키(Cookie)
+- 클라이언트에 사용자 정보를 저장
+- 클라이언트에 저장하므로 서버의 부하를 줄일 수 있지만 보안상 위험
+- 데이터의 저장이 1.2mb로 제한되어 있음
+- 문자열로 저장
+
+쿠키 생성 방법
+	Cookie 객체명 = new Cookie("키","값");
+
+쿠키 시간을 설정하는 방법
+	setMaxAge() : 쿠키가 유지되는 시간을 설정(초)
+	setMaxAge(60 * 60 * 24 * 30); // 30일
+
+쿠키를 서버에서 읽어오는 방법
+	Cookie[] 배열명 = request.getCookies();
+
+세션(session)
+- 서버에 사용자 정보를 저장
+- 서버상에 존재하는 객체로 브라우저 단위당 1개씩 존재
+- 쿠키에 비하여 보완이 좋음
+- 웹 브라우저를 닫기 전까지 클라이언트와 연결됨
+
+세션변수 만들기
+session.setAttribut("변수명", "값");
+
+세션 값 읽어오기
+session.getAttribute("변수명");
+
+세션 값 삭제하기
+session.invalidate();
+
+문제.
+cookie를 사용한 로그인 페이지를 session 을 사용해서 재구현
+
+✔ 이클립스 자동 줄바꿈
+	알트 + 쉬프트 + y
+
+✔ 이클립스 JSP 자동 import
+	클래스에 커서를 두고 - > 컨트롤 + 쉬프트 + m
+
+
+include 
+- include 폴더 하나 만들고 -> jsp 파일설정 
+- 겹치는 부분 한번에 수정 가능
+	<%@ include file="./include/footer.jsp" %>
+
+exception 객체
+- 예외가 발생하면 특정 페이지로 이동할 수 있음
+- 에러페이지에서 isErrorPage="true"로 설정
+
+pageContext 객체
+- jsp 페이지에 대해 1:1로 연결된 객체로 jsp페이지당 하나의 pageContext 객체가 생성
+- 다른 기본객체들을 구할 때 사용하거나 페이지의 흐름을 제어할 때 사용
+
+getRequest() : request 객체를 반환
+getResponse() : response 객체를 반환
+...
+forward() : 페이지의 제어권을 다른 페이지로 넘겨줌
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

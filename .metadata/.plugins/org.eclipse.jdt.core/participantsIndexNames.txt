@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1631210251.index
+\Day1\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\379886075.index
+\Day2\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\594015451.index
+\Day4\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1058439228.index
+\Day2\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1111984886.index
+\Day04\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\86351905.index
+\Day04\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2365707668.index
+\Day3\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2505388932.index
+\Day2\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4187569179.index
+\Day4\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4029810882.index
+\Day3\src
+C:\Users\±èÅÂÈÆ\Desktop\Blair\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\989625934.index
+\Day1\src

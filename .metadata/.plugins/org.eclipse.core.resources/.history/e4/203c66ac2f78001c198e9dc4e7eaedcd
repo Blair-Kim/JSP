@@ -1,0 +1,14 @@
+$(function(){
+	$('#likeup').on('click', function(){
+		if($('#like').val() == 0){
+			alert('좋아요를 눌렀습니다!');
+			$('#like').focus();
+			return false;
+		}
+	});
+});
+
+function likeup(){
+	
+}
+

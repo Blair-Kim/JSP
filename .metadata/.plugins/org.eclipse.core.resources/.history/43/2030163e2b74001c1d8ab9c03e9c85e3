@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>장바구니</title>
+</head>
+<body>
+	<h2>장바구니</h2>
+	<form method="post" action="7_basket_ok.jsp">
+		<p>
+			<select name="product">
+				<option value="가방">가방</option>
+				<option value="라면">라면</option>
+				<option value="계란">계란</option>
+				<option value="청소기">청소기</option>
+				<option value="삼성핸드폰">삼성핸드폰</option>
+			</select>
+		</p>
+		<hr>
+		<p>
+			<input type="submit" value="추가"><input type="button"
+				value="결제" onclick="payment()">
+		</p>
+		<hr>
+	<%
+		request.setCharacterEncoding("UTF-8");
+		session.setAttribute("productList", list);
+		out.println(list);
+	%>
+	</form>
+</body>
+</html>

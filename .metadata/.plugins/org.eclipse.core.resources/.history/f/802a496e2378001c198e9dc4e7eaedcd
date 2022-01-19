@@ -1,0 +1,18 @@
+$(function() {
+      const xhr = new XMLHttpRequest();
+      const userid = $('#userid').val();
+      xhr.open('GET', 'idcheck.jsp?userid='+userid, true);
+      xhr.send();
+
+      xhr.onreadystatechange = function(){
+         if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            const result = xhr.responseText;
+            if(result.trim() == "ok"){
+               $('#idcheckmsg').html("<b style='color: blue'>가입이 가능합니다.</b>");
+            }else{
+               $('#idcheckmsg').html("<b style='color: red'>중복된 아이디가 있습니다.</b>");
+            }
+         }
+      }
+   });
+

@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커뮤니티 - 글쓰기</title>
+</head>
+<body>
+	<h2>커뮤니티 글쓰기</h2>
+	<!-- 
+		form action : write_ok.jsp
+		작성자 : session.getAttribute("userid")
+		제목 : b_title
+		내용 : b_content
+		
+		write_ok.jsp --> list.jsp
+		db insert
+	 -->
+</body>
+</html>

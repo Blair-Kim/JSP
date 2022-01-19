@@ -1,0 +1,6 @@
+
+
+function likeup(){
+	alert('좋아요를 눌렀습니다!');
+}
+

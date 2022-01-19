@@ -1,0 +1,20 @@
+function likeup(){
+	alert('좋아요를 눌렀습니다!');
+	
+	
+	const xhr = new XMLHttpRequest();
+	const b_idx = $('#b_idx').val();
+	xhr.open('GET', 'view.jsp?b_idx='+b_idx, true);
+	xhr.send();
+	
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200){
+			const result = xhr.responseText;
+			console.log(result);
+			if(result.trim() == "ok"){
+				$('b_like').val('1');
+			}
+		}
+	}
+};
+

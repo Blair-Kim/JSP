@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+    	String userid = null;
+	String name = null;
+	String idx = null;
+	if(session.getAttribute("userid") != null){
+		userid = (String)session.getAttribute("userid");
+		name = (String)session.getAttribute("name");
+		idx = (String)session.getAttribute("idx");
+	}
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커뮤니티 - 글쓰기</title>
+</head>
+<body>
+	<h2>커뮤니티 글쓰기</h2>
+	<form action="./wirte_ok.jsp" method="post" name="regform" id="regform" onsubmit="return sendit()">
+        <input type="hidden" id="isidcheck" value="n">
+        <input type="hidden" id="isssn" value="n">
+        <p>작성자 : <input type="text" name="userid" id="userid" maxlength="20"></p>
+        <p>제목 : <input type="text" name="b_title" id="b_title" maxlength="200"></p>
+        <p>내용: <input type="text" name="b_content" id="b_title" maxlength="2000" ></p>
+        <p><input type="submit" value="작성완료"> <input type="reset" value="다시작성"> <input type="button" value="리스트로" onclick="location.href='./list.jsp'"></p>
+    </form>
+	
+	<!-- 
+		form action : write_ok.jsp
+		작성자 : session.getAttribute("userid")
+		제목 : b_title
+		내용 : b_content
+		
+		write_ok.jsp -> list.jsp 
+		db insert
+	 -->
+</body>
+</html>
